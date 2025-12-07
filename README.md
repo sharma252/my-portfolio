@@ -2,6 +2,10 @@
 
 A modern, responsive portfolio website showcasing my skills, experience, and projects as a Full Stack Developer.
 
+## 🚀 Live Demo
+
+Check out the live version: [https://sharma252.github.io/my-portfolio/](https://sharma252.github.io/my-portfolio/)
+
 ## Features
 
 - Responsive design with Bootstrap 5
