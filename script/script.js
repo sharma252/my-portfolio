@@ -36,11 +36,11 @@ const observerOptions = {
   threshold: 0.1,
 };
 
-const fadeInElements = document.querySelectorAll(".fade-in");
+const fadeInElements = document.querySelectorAll('.fade-in');
 const observer = new IntersectionObserver((entries, observer) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      entry.target.classList.add("visible");
+      entry.target.classList.add('visible');
       observer.unobserve(entry.target);
     }
   });
@@ -49,3 +49,27 @@ const observer = new IntersectionObserver((entries, observer) => {
 fadeInElements.forEach((element) => {
   observer.observe(element);
 });
+
+// Dark Mode Toggle
+const themeToggle = document.getElementById('theme-toggle');
+const themeIcon = themeToggle.querySelector('i');
+
+// Check for saved theme preference or default to light mode
+const currentTheme = localStorage.getItem('theme') || 'light';
+document.body.classList.toggle('dark', currentTheme === 'dark');
+updateThemeIcon();
+
+themeToggle.addEventListener('click', () => {
+  document.body.classList.toggle('dark');
+  const theme = document.body.classList.contains('dark') ? 'dark' : 'light';
+  localStorage.setItem('theme', theme);
+  updateThemeIcon();
+});
+
+function updateThemeIcon() {
+  if (document.body.classList.contains('dark')) {
+    themeIcon.className = 'fas fa-sun';
+  } else {
+    themeIcon.className = 'fas fa-moon';
+  }
+}

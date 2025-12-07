@@ -422,3 +422,89 @@ footer {
     margin: 0 10px;
   }
 }
+
+/* Dark Mode Styles */
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark .navbar {
+  background: rgba(18, 18, 18, 0.95) !important;
+}
+
+body.dark .hero {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+}
+
+body.dark #about {
+  background: #1e1e1e;
+}
+
+body.dark .about-card {
+  background: #2a2a2a;
+  color: #ffffff;
+}
+
+body.dark .skill-category {
+  background: #2a2a2a;
+  color: #ffffff;
+}
+
+body.dark .skill-category h4 {
+  color: #ffffff;
+}
+
+body.dark #experience {
+  background: #1e1e1e;
+}
+
+body.dark .timeline-item {
+  background: #2a2a2a;
+  color: #ffffff;
+}
+
+body.dark .timeline-item::before {
+  background: #ffffff;
+  border-color: #1e1e1e;
+}
+
+body.dark .company {
+  color: #ffffff;
+}
+
+body.dark .project-card {
+  background: #2a2a2a;
+  color: #ffffff;
+}
+
+body.dark .project-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+body.dark #contact {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+}
+
+body.dark .contact-info {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+body.dark .contact-info a {
+  color: #ffffff;
+}
+
+body.dark footer {
+  background: #1e1e1e;
+  color: #ffffff;
+}
+
+body.dark .award-badge {
+  background: #2a2a2a;
+  color: #ffffff;
+}
+
+body.dark .award-icon {
+  color: #ffffff;
+}
